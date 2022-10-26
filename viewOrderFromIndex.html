@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Order Detail</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-3 ml-2">
+      <h2>Order Details</h2>
+    </div>
+  </div>
+
+  <div class="container bg-light">
+    <div class="row m-2">
+      <label>Order ID (Mã đơn hàng)</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="order-id" />
+    </div>
+    <div class="row m-2">
+      <label>Cỡ Combo</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="combo-size" />
+    </div>
+    <div class="row m-2">
+      <label>Đường kính Pizza</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="pizza-diameter" />
+    </div>
+    <div class="row m-2">
+      <label>Sườn nướng (miếng)</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="rib-piece" />
+    </div>
+
+    <div class="row m-2">
+      <label>Đồ uống</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="selected-drink" />
+    </div>
+
+    <div class="row m-2">
+      <label>Số lượng nước uống</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="number-drink" />
+    </div>
+
+    <div class="row m-2">
+      <label>Voucher Id (Mã Voucher)</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="voucher-id" />
+    </div>
+
+    <div class="row m-2">
+      <label>Loại Pizza (pizza type)</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="pizza-type" />
+    </div>
+
+    <div class="row m-2">
+      <label>Salag (g)</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="salad" />
+    </div>
+
+    <div class="row m-2">
+      <label>Thành tiền</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="amount" />
+    </div>
+
+    <div class="row m-2">
+      <label>Giảm giá (discount)</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="discount" />
+    </div>
+
+    <div class="row m-2">
+      <label>Họ và tên</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="full-name" />
+    </div>
+
+    <div class="row m-2">
+      <label>Email</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="email" />
+    </div>
+
+    <div class="row m-2">
+      <label>Số điện thoại</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="phone-number" />
+    </div>
+
+    <div class="row m-2">
+      <label>Địa chỉ</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="address" />
+    </div>
+
+    <div class="row m-2">
+      <label>Lời nhắn</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="message" />
+    </div>
+
+    <div class="row m-2">
+      <label>Trạng thái đơn hàng</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="order-status" />
+    </div>
+
+    <div class="row m-2">
+      <label>Ngày tạo đơn</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="created-date" />
+    </div>
+
+    <div class="row m-2">
+      <label>Ngày cập nhật</label>
+    </div>
+    <div class="row m-2">
+      <input class="form-control" id="updated-date" />
+    </div>
+    <div class="row ml-2 mt-3 pr-2">
+      <div class="col-11 mb-3">
+        <button type="button" class="btn btn-success px-5" id="btn-confirm"
+          onclick="onBtnConfirmClick()">Confirm</button>
+        <button type=" button" class="btn btn-danger px-5" id="btn-cancel" onclick="onBtnCancelClick()">Cancel</button>
+      </div>
+      <div class="col-1">
+
+      </div>
+    </div>
+  </div>
+  <!-- Javascript -->
+  <script src="viewOrderFromIndex.js"></script>
+</body>
+
+</html>
